@@ -1,0 +1,230 @@
+* {
+    font-size: 1.6rem;
+    font-family: 'Josefin Slab', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #FFBF00;
+    overflow: hidden;
+}
+
+.stick-in-between {
+    position: absolute;
+    width: 5px;
+    height: 120%;
+    top: -10%;
+    left: 50%;
+    transform: rotate(15deg);
+    background-color: white;
+}
+
+.text1 {
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    color: white;
+}
+
+.text2 {
+    display: block;
+    position: absolute;
+    right: 4%;
+    bottom: 12%;
+    color: white;
+}
+
+img {
+    position: absolute;
+    left: 6%;
+    bottom: 8%;
+}
+
+:root {
+    --orange: #FF4500;
+    --rad: 52px;
+    --ear-rad: 76px;
+}
+
+.replica {
+    --side-length: 512px;
+    position: absolute;
+    width: var(--side-length);
+    height: var(--side-length);
+    border-radius: calc(var(--side-length) / 2);
+    right: 9%;
+    top: 8%;
+    background-color: var(--orange);
+/*    transform: scale(.3) rotate(180deg); */
+}
+
+.radar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stick {
+    width: 13px;
+    height: 100px;
+    position: inherit;
+    background-color: white;
+}
+
+.vertical {
+    left: 50.8%;
+    top: 20%;
+    transform: rotate(12deg);
+    border-radius: 7px 0px 0px 0px;
+}
+
+.horizontal {
+    top: 13.8%;
+    left: 62%;
+    transform: rotate(102deg);
+}
+
+.radar .circle {
+    --c-s-length: 52px;
+    position: inherit;
+    width: var(--c-s-length);
+    height: var(--c-s-length);
+    border-radius: calc(var(--c-s-length) / 2);
+    background-color: white;
+    top: 20%;
+    left: 65.8%;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.face .circle {
+    position: inherit;
+    width: 300px;
+    height: 300px;
+    clip-path: ellipse(50% 35%);
+    background-color: white;
+    left: 50%;
+    margin-left: -150px;
+    top: 30%;
+}
+
+.ears {
+    position: inherit;
+    top: 43%;
+    left: 50%;
+}
+
+.ear {
+    position: inherit;
+    width: var(--ear-rad);
+    height: var(--ear-rad);
+    border-radius: calc(var(--ear-rad)/2);
+    background-color: white;
+}
+
+.ear1 {
+    margin-left: calc(-131.6px + calc(-1 * var(--ear-rad) / 2));
+}
+
+.ear2 {
+    margin-left: calc(+131.6px + calc(-1 * var(--ear-rad) / 2));
+}
+
+.mouth {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.additive {
+    position: inherit;
+    width: 150px;
+    height: 150px;
+    clip-path: ellipse(50% 28%);
+    background-color: var(--orange);
+    left: 50%;
+    margin-left: -75px;
+    top: 50%;
+}
+
+.subtractive {
+    position: inherit;
+    width: 180px;
+    height: 150px;
+    clip-path: ellipse(42% 32%);
+    background-color: white;
+    left: 50%;
+    margin-left: -90px;
+    top: 46%;
+}
+
+.eyes {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+}
+
+.eye {
+    position: inherit;
+    width: var(--rad);
+    height: var(--rad);
+    border-radius: calc(var(--rad)/2);
+    background-color: var(--orange);
+    z-index: 1;
+}
+
+.eye1 {
+    margin-left: calc(-56.8px + calc(-1 * var(--rad) / 2));
+}
+
+.eye2 {
+    margin-left: calc(+56.8px + calc(-1 * var(--rad) / 2));
+}
+
+.subtractive-stick {
+    position: inherit;
+    width: 28px;
+    top: 52%;
+    background-color: white;
+}
+
+.additive-stick {
+    position: inherit;
+    height: 10.6px;
+    width: 13px;
+    top: 67.27%;
+    background-color: var(--orange);
+    border-radius: 8px;
+}
+
+.one {
+    transform: rotate(50deg);
+    left: 66%;
+}
+
+.add-one {
+    transform: rotate(60deg);
+    left: 60%;
+}
+
+.two {
+    transform: rotate(-50deg);
+    right: 66%;
+}
+
+.add-two {
+    transform: rotate(-60deg);
+    right: 60%;
+}
